@@ -1,0 +1,1 @@
+nmap -p 80,81,8080,8081,443,1443,2443,3443,4443,5443,6443,7443,8443,9443 -A -oA nmap-$2cmdsan$ -PN --open --script ssl* --script tls* $2cmd$

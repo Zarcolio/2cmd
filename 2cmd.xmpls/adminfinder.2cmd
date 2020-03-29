@@ -1,0 +1,1 @@
+recursebuster -ajax -w /usr/share/wordlists/dirb/adminpanellinks.txt -u $2cmd$ -norecursion -noui -o $2cmdsan$ -https

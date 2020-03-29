@@ -1,0 +1,1 @@
+xsstrike -u $2cmd$ --crawl  --params --blind >'xsstrike-$2cmdsan$.log'

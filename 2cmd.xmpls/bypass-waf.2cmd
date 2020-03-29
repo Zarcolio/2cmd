@@ -1,0 +1,1 @@
+bypass-firewalls-by-DNS-history -a -d $2cmd$ -o 'bypass-waf-$2cmdsan$.log'

@@ -1,0 +1,2 @@
+subjack -w subdomain-words.txt -d $2cmdsan$
+subjack -w subdomain-words.txt -ssl -d $2cmdsan$

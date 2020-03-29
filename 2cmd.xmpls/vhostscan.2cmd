@@ -1,0 +1,1 @@
+VHostScan -t $2cmd$ -w vhostscan-wordlist3.txt -oN vhosts-$2cmdsan$.txt

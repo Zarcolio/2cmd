@@ -1,0 +1,2 @@
+sqlmap -a --batch --forms --crawl=3 --threads=10 --level=5 --risk=3 --random-agent -u $2cmd$ 
+

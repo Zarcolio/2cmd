@@ -1,0 +1,2 @@
+echo Command from input: $2cmd$ 
+echo Sanitized command for use in files: $2cmdsan$

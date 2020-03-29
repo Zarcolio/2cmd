@@ -1,0 +1,1 @@
+hakrawler -domain $2cmd$ -plain -scope strict
