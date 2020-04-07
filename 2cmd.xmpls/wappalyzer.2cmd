@@ -1,2 +1,2 @@
-wappalyzer $2cmd$
+wappalyzer $2cmd$ > $2cmdsan$
 
