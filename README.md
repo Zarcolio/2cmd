@@ -39,7 +39,7 @@ What if you have large sets of URLs to be analyzed with Wappalyzer?
 You can do it manually, or create a script/oneliner.
 But with 2cmd, it's possible run Wappalyzer with every URL that is provided through stdin.
 A large number of example .2cmd files are located in the 2cmd.xmpls directory.
-One for Wappalyzer is present to. It only contains:
+One for Wappalyzer is present too. It only contains:
 ```
 wappalyzer $2cmd$ > $2cmdsan$.json
 ```
