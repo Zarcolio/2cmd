@@ -21,6 +21,14 @@ def FileNameSan(sFileName):
     sFileName = sFileName.replace("&", "-")
     sFileName = sFileName.replace("?", "-")
     sFileName = sFileName.replace("*", "-")
+    
+    # If a file name approaches the maximum length, tructate it and add a incrementing number:
+    if len(sFileName) > 240:
+        i = 1
+        sFileName = sFileName[:240]
+        while os.path.exists(sFileName + str(i)):
+            i += 1
+        sFileName = sFileName + str(i)
     return sFileName
 
 def escapeString(sString):
