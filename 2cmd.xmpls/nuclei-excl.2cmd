@@ -1,0 +1,1 @@
+subfinder -d $2cmd$ -silent | grep -vf $2nd$| httpx -silent | nuclei -t cves/ -o $2cmdsan$.txt -silent -pbar
