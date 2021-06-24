@@ -1,3 +1,5 @@
 echo $2cmd$
-whois $2cmd$|egrep -m 6 'owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant Name:|  Name:|Registrant:|No whois server|no whois server|Timeout|no entries found|Name Server: |Name server: '|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'
+whois $2cmd$|egrep -m 6 'owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant Name:|  Name:|Registrant:|No whois server|no whois server|Timeout|no entries found'|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'
+echo Nameservers:
+whois $2cmd$|egrep -m 6 'Name Server: |Name server: '|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'|sed -e 's/^[[:space:]]*//'|sed 's/Name [Ss]erver: //g'|tr [:upper:] [:lower:]
 echo
