@@ -1,3 +1,3 @@
 echo $2cmd$
-whois $2cmd$ |egrep -m 2 'owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant:'|egrep -v '   Domain Name:|Domain Administrator|required for registry escrow'
+whois $2cmd$|egrep -m 6 'owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant Name:|  Name:|Registrant:|No whois server|no whois server|Timeout|no entries found|Name Server: |Name server: '|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'
 echo
