@@ -1,5 +1,6 @@
 # About 2cmd
-2cmd takes input from stdin and runs each line with the command(s) in the given config file providing you with the possibility to use input files with commands that don't support standard input or input files.
+How often do you come across a tool that does exactly what you want, but it does not take input from a file?
+2cmd tries to fix this. It takes input from stdin and runs each line with the command(s) in the given config file providing you with the possibility to use input files with commands that don't support standard input or input files.
 
 # Install
 2cmd should be able to run with a default Kali Linux installation without installing additional Python packages. If you're running into trouble running 2cmd, please drop me an issue and I'll try to fix it :)
