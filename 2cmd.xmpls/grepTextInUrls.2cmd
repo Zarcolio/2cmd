@@ -1,0 +1,1 @@
+wget -qO - $2cmd$|grep $2nd$
