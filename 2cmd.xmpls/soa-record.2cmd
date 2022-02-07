@@ -1,0 +1,3 @@
+echo -n $2cmd$,
+nslookup -type=soa $2cmd$|grep 'origin = '|sed -e 's/^[[:space:]]*origin = //'|tr -d '\n'
+echo 
