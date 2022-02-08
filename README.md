@@ -61,6 +61,7 @@ wappalyzer https://www.uber.com > https-www.uber.com.json
 wappalyzer https://www.twitter.com > https-www.twitter.com.json
 ```
 And 3 files containing the JSON output by Wappalyzer :)
+
 Want one big file? Just edit the .2cmd file to to add to the output file:
 ```
 wappalyzer $2cmd$ >> $2cmdsan$.json
