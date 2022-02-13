@@ -1,3 +1,5 @@
+![](https://img.shields.io/github/license/Zarcolio/2cmd) ![](https://badges.pufler.dev/visits/Zarcolio/2cmd) ![](https://img.shields.io/github/stars/Zarcolio/2cmd) ![](https://img.shields.io/github/forks/Zarcolio/2cmd) ![](https://img.shields.io/github/issues/Zarcolio/2cmd) ![](https://img.shields.io/github/issues-closed-raw/Zarcolio/2cmd)  ![](https://img.shields.io/github/issues-pr/Zarcolio/2cmd) ![](https://img.shields.io/github/issues-pr-closed-raw/Zarcolio/2cmd)
+
 # About 2cmd
 How often do you come across a tool that does exactly what you want, but it does not take input from a file?
 2cmd tries to fix this. It takes input from stdin and runs each line with the command(s) in the given config file providing you with the possibility to use input files with commands that don't support standard input or input files.
