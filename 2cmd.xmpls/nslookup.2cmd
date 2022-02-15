@@ -1,0 +1,4 @@
+echo -n $2cmd$,|sed  's/ //g'
+nslookup $2cmd$|grep -v '#53'|grep 'Address:'|sed  's/Address: //g'|tr -d '\n'
+
+echo 
