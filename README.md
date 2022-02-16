@@ -67,3 +67,9 @@ Want one big file? Just edit the .2cmd file to to append to the output file:
 ```
 wappalyzer $2cmd$ >> $2cmdsan$.json
 ```
+
+Want to run nslookup against a list of FQDN's (A or SOA record)? Just run:
+```
+cat fqdns.txt | 2cmd nslookup_a.2cmd
+cat fqdns.txt | 2cmd nslookup_soa.2cmd
+```
