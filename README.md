@@ -71,5 +71,8 @@ wappalyzer $2cmd$ >> $2cmdsan$.json
 Want to run nslookup against a list of FQDN's (A or SOA record)? Just run:
 ```
 cat fqdns.txt | 2cmd nslookup_a.2cmd
+```
+Or:
+```
 cat fqdns.txt | 2cmd nslookup_soa.2cmd
 ```
