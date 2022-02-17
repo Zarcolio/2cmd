@@ -1,1 +1,4 @@
+# Uses Corsy to find known misconfigurations in CORS implementations within the supplied URLs.
+# Download Corsy: https://github.com/s0md3v/Corsy
+
 corsy -u $2cmd$
