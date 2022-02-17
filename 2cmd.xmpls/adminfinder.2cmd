@@ -1,1 +1,3 @@
+# This script uses recursebuster with /usr/share/wordlists/dirb/adminpanellinks.txt to find admin panels in the supplied URLs.
+
 recursebuster -ajax -w /usr/share/wordlists/dirb/adminpanellinks.txt -u $2cmd$ -norecursion -noui -o $2cmdsan$ -https
