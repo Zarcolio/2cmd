@@ -1,1 +1,3 @@
+# Uses a script called bypass-firewalls-by-DNS-history to retrieve IP addresses and exports it to a log file called bypass-waf-$2cmdsan$.log.
+
 bypass-firewalls-by-DNS-history -a -d $2cmd$ -o 'bypass-waf-$2cmdsan$.log'
