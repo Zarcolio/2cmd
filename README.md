@@ -26,6 +26,7 @@ positional arguments:
 
 optional arguments:
   -h, --help            show this help message and exit
+  -hh, --help2          Show the help inside the .2cmd script being called. Lines in the beginning of the script starting with # are displayed as help.
   -2 SECOND, --second SECOND
                         Pass a second variable to the script to run.
   -t TIMEOUT, --timeout TIMEOUT
