@@ -1,3 +1,6 @@
+# Runs nslookup to retrieve the A record for each line that is passed to 2cmd.
+# Output is in CSV format to screen.
+
 echo -n $2cmd$,|sed  's/ //g'
 nslookup $2cmd$|grep -v '#53'|grep 'Address:'|sed  's/Address: //g'|tr -d '\n'
 
