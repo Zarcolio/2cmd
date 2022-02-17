@@ -1,6 +1,6 @@
 # This script uses recursebuster with /usr/share/wordlists/dirb/adminpanellinks.txt to find admin panels.
 # Input type: URLs
-# Install from https://github.com/C-Sto/recursebuster
-# Download adminpanellinks.txt from https://github.com/mIcHyAmRaNe/okadminfinder3/blob/master/LinkFile/adminpanellinks.txt
+# Install: https://github.com/C-Sto/recursebuster
+# Download: https://github.com/mIcHyAmRaNe/okadminfinder3/blob/master/LinkFile/adminpanellinks.txt
 
 recursebuster -ajax -w /usr/share/wordlists/dirb/adminpanellinks.txt -u $2cmd$ -norecursion -noui -o $2cmdsan$ -https
