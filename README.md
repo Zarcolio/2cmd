@@ -9,7 +9,7 @@ How often do you come across a tool that does exactly what you want, but it does
 
 # Usage
 ```
-2cmd [-h] [-2 SECOND] [-t TIMEOUT] [-v] [-w WORKERS] cmd
+2cmd [-h] [-hh] [-2 SECOND] [-t TIMEOUT] [-v] [-w WORKERS] cmd
 
 This script takes input lines from stdin and inserts them in the commands
 provided in the commands file. This way you can execute a certain command many
