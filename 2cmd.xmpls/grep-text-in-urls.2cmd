@@ -1,1 +1,4 @@
+# This script uses grep with wget to search for text in a list of websites.
+# Input type: URLs, text (supply with -2nd)
+
 wget -qO - $2cmd$|grep $2nd$
