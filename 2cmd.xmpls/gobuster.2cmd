@@ -1,1 +1,6 @@
+# This script uses gobuster with /usr/share/wordlists/dirb/common.txt to find paths in URLs.
+# Output: gobuster-$2cmdsan$.log
+# Input type: URLs
+# Install: https://github.com/OJ/gobuster
+
 gobuster dir -w /usr/share/wordlists/dirb/common.txt -u $2cmd$ --quiet -e -r -o 'gobuster-$2cmdsan$.log' -t 20
