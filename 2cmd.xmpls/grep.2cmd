@@ -1,2 +1,4 @@
-echo $2cmd$| grep $2cmdfile$/
+# This script greps for text in files, use -v to see which files text has been found.
+# Input type: text
 
+echo $2cmd$| grep $2cmdfile$/
