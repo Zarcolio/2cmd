@@ -60,6 +60,7 @@ parser = argparse.ArgumentParser(description="This script takes input lines from
 parser.add_argument("cmd", help="File containing one or more commands that should be executed. If no path is provided, a file in scriptdir/2cmd.xmpls is assumed. Use $2cmd$ or $2cmdsan$ in lowercase in each command line. $2cmd$ is replaced with each line from input. Use $cmdsan$ to sanitize a string for use in a filename.")
 parser.add_argument("-hh", "--help2", help="Show the help inside the .2cmd script being called. Lines in the beginning of the script starting with # are displayed as help.", action="store_true")
 parser.add_argument("-2", "--second", help="Pass a second variable to the script to run. This goes into variable $2nd$.")
+parser.add_argument("-a", "--args", help="Provides cmdline arguments for the target program. Use double quotes to encloses spaces and other special characters.")
 parser.add_argument("-t", "--timeout", help="Wait x milliseconds between commands.")
 parser.add_argument("-v", "--verbose", help="In green, show the commands that are created from stdin and the provide config file.", action="store_true")
 parser.add_argument("-w", "--workers", help="Defines how many worker threads execute the commands parallelly.", default=1)
@@ -111,8 +112,9 @@ for strInput in sys.stdin:
                     
                     strInputSan = FileNameSan(strInput)
                     sCmd = sCmd.replace("$2cmdsan$", strInputSan, len(sCmd))
-            
+                    sCmd = sCmd.replace("$args$", args.args, len(sCmd))
                     sCmd = sCmd.replace("$2cmd$", strInput, len(sCmd))
+                    
                     if args.second:
                         sCmd = sCmd.replace("$2nd$", args.second, len(sCmd))
             
