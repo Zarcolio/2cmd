@@ -1,2 +1,5 @@
-wappalyzer $2cmd$ > $2cmdsan$.json
+# This script uses Wappalyzer to analyze web aplications.
+# Input type: URLs
+# Install: npm i -g wappalyzer
 
+wappalyzer $2cmd$ > $2cmdsan$.json
