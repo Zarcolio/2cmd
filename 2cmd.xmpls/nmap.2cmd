@@ -1,1 +1,0 @@
-nmap $2cmd$ -oA nmap-$2cmdsan$ $args$

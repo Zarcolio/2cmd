@@ -1,0 +1,5 @@
+# This script uses Nmap (has support for input files) and creates an outputfile per input line (this is where 2cmd comes in).
+# Use -a to add Nmap command line arguments.
+# Uses https://nmap.org
+
+nmap $2cmd$ -oA nmap-$2cmdsan$ $args$
