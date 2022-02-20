@@ -29,6 +29,7 @@ optional arguments:
   -hh, --help2          Show the help inside the .2cmd script being called. Lines in the beginning of the script starting with # are displayed as help.
   -2 SECOND, --second SECOND
                         Pass a second variable to the script to run.
+  -a ARGS, --args ARGS  Provides cmdline arguments for the target program. Use double quotes to encloses spaces and other special characters.
   -t TIMEOUT, --timeout TIMEOUT
                         Wait x milliseconds between commands.
   -v, --verbose         In green, show the commands that are created from 
