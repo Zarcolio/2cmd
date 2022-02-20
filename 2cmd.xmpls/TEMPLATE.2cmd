@@ -1,0 +1,11 @@
+# This script is a template file for creating new scripts.
+# You can use the following variables in the script:
+# - $2cmd$:     contains content from every input line.
+# - $2cmdsan$:  contains content from every input line but sanitized for use in a filename.
+# - $2nd$:      contains an extra value you want to pass to the script.
+# - $args$:     contains command line opties you to pass to the script.
+# Input type: URLs
+# Input file: wordlist.txt
+# Output file: output-$2cmdsan$.log
+# Install (from):
+Download from:
