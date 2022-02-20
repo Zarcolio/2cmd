@@ -1,1 +1,4 @@
+# This script uses the Hakralwer script by https://twitter.com/hakluke
+# Install from https://github.com/hakluke/hakrawler
+
 hakrawler -domain $2cmd$ -plain -scope strict
