@@ -1,0 +1,6 @@
+# Runs an online SSL/TLS scan per input line.
+# Uses the website by SSL Labs: https://www.ssllabs.com/ssltest/analyze.html.
+
+
+
+python -mwebbrowser https://www.ssllabs.com/ssltest/analyze.html?d="$2cmd$" 
