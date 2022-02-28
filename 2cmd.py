@@ -112,7 +112,8 @@ for strInput in sys.stdin:
                     
                     strInputSan = FileNameSan(strInput)
                     sCmd = sCmd.replace("$2cmdsan$", strInputSan, len(sCmd))
-                    sCmd = sCmd.replace("$args$", args.args, len(sCmd))
+                    if args.args:
+                        sCmd = sCmd.replace("$args$", args.args, len(sCmd))
                     sCmd = sCmd.replace("$2cmd$", strInput, len(sCmd))
                     
                     if args.second:
