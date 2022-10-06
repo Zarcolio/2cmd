@@ -43,9 +43,7 @@ For example, [Wappalyzer cli](https://www.npmjs.com/package/wappalyzer-cli) has 
 What if you have large sets of URLs to be analyzed with Wappalyzer?
 You can do it manually, or create a script/oneliner.
 But with 2cmd, it's possible run Wappalyzer with every URL that is provided through stdin.
-A large number of example .2cmd files is located in the 2cmd.xmpls directory.
-
-One for Wappalyzer is provided. It only contains:
+A large number of example .2cmd files is located in the 2cmd.xmpls directory. One for Wappalyzer is provided. It only contains:
 ```
 wappalyzer $2cmd$ > $2cmdsan$.json
 ```
