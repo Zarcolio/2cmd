@@ -1,5 +1,8 @@
 echo $2cmd$
-whois $2cmd$|egrep -m 6 'owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant Name:|  Name:|Registrant:|No whois server|no whois server|Timeout|no entries found'|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'
-echo Nameservers:
-whois $2cmd$|egrep -m 6 'Name Server: |Name server: '|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'|sed -e 's/^[[:space:]]*//'|sed 's/Name [Ss]erver: //g'|tr [:upper:] [:lower:]
+whois $2cmd$|egrep -m 6 'organization:|owner:|Registrant Organization:|International Organisation:|Registrant name:|Registrant Name:|  Name:|Registrant:|No whois server|no whois server|Timeout|no entries found|whois database at\nhttp'|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'
+#echo Nameserver:
+#whois $2cmd$|egrep -m 6 'Name Server: |name server: '|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'|sed -e 's/^[[:space:]]*//'|sed 's/Name [Ss]erver: //g'|tr [:upper:] [:lower:]
+#whois $2cmd$|egrep -m 6 -e '[N|n]ame[ ]{0,1}[S|s]erver[s]:'|egrep -v ':$|: $|Domain Administrator|required for registry escrow|REDACTED FOR PRIVACY'|sed -e 's/^[[:space:]]*//'|sed 's/Name [Ss]erver: //g'|tr [:upper:] [:lower:]
+echo SOA record:
+nslookup -type=soa $2cmd$|grep 'origin = '|sed -e 's/^[[:space:]]*origin = //'
 echo
